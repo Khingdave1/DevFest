@@ -37,7 +37,7 @@
 }
 
 @media only screen and (max-width: 870px) {
-  .event-content {
+  .event-content-top {
     display: grid;
     grid-gap: 2rem;
   }
