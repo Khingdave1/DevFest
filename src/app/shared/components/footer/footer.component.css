@@ -1,4 +1,7 @@
 /* General starts */
+.footer-top h2 {
+  font-size: clamp(1.5rem, 0.2679rem + 2.9557vw, 1.875rem);
+}
 .footer-top ul li,
 .footer-link li,
 .go-top {

@@ -28,7 +28,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Google Sans", "Roboto Mono", monospace;
   position: relative;
   color: var(--text-color);
   background-color: var(--grey);
@@ -47,11 +47,11 @@ button {
 input,
 button,
 textarea {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Google Sans", "Roboto Mono", monospace;
 }
 input::placeholder,
 textarea::placeholder {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Google Sans", "Roboto Mono", monospace;
 }
 .btn {
   display: inline-block;

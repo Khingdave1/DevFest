@@ -9,6 +9,7 @@ import { SpeakersComponent } from 'src/app/modules/speakers/speakers.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { DefaultComponent } from './default.component';
 import { HomeModule } from 'src/app/modules/home/home.module';
+import { CocComponent } from 'src/app/modules/coc/coc.component';
 
 
 
@@ -19,7 +20,8 @@ import { HomeModule } from 'src/app/modules/home/home.module';
     ScheduleComponent,
     RegistrationComponent,
     FaqComponent,
-    SpeakersComponent
+    SpeakersComponent,
+    CocComponent
   ],
   imports: [
     CommonModule,
@@ -33,7 +35,8 @@ import { HomeModule } from 'src/app/modules/home/home.module';
     ScheduleComponent,
     RegistrationComponent,
     FaqComponent,
-    SpeakersComponent
+    SpeakersComponent,
+    CocComponent
   ]
 })
 export class DefaultModule { }
