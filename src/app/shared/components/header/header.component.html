@@ -1,6 +1,45 @@
-<button routerLink="">Home</button>
-<button routerLink="/registration">Registration</button>
-<button routerLink="/team">Team</button>
-<button routerLink="/schedule">Schedule</button>
-<button routerLink="/speakers">Speakers</button>
-<button routerLink="/faq">Faq</button>
+<!-- Header -->
+<header class="header">
+  <!-- Nav -->
+  <div class="container">
+    <!-- Logo -->
+    <span routerLink="" class="nav-logo clickable">
+      <!-- <img src="../../../assets/img/logo.png" alt="" /> -->
+      Logo
+    </span>
+    <!-- Nav link -->
+    <nav class="nav-list-area">
+      <ul class="nav-list">
+        <li>
+          <a
+            routerLink=""
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a routerLink="/registration" routerLinkActive="active-link"
+            >Registration</a
+          >
+        </li>
+        <li><a routerLink="/team" routerLinkActive="active-link">Team</a></li>
+        <li>
+          <a routerLink="/schedule" routerLinkActive="active-link">Schedule</a>
+        </li>
+        <li>
+          <a routerLink="/speakers" routerLinkActive="active-link">Speakers</a>
+        </li>
+        <li><a routerLink="/faq" routerLinkActive="active-link">Faq</a></li>
+      </ul>
+
+      <!-- Register btn -->
+      <button class="btn prim-btn register-btn">Register Now</button>
+
+      <!-- Hamburger menu -->
+      <div class="toggle-menu" id="toggle-menu">
+        <span class="menu-bar"></span>
+      </div>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,135 @@
+/* Header starts */
+.header {
+  width: 100%;
+  background-color: var(--white-color);
+  padding: 15px 0;
+}
+@media only screen and (max-height: 450px) {
+  .header {
+    height: 600px;
+  }
+}
+/* Nav starts */
+.header .container {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Logo starts */
+.header .nav-logo {
+  width: 50px;
+  height: 50px;
+}
+.header .nav-logo img {
+  width: 100%;
+}
+
+.header .nav-list-area {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav-list li {
+  display: inline-block;
+  margin: 0 20px;
+  font-weight: 600;
+  position: relative;
+}
+.header .nav-list li a::after,
+.header .nav-list li .active-link::after {
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  background-color: var(--primary-color);
+  opacity: 0;
+  transition: 0.2s all ease-in;
+}
+.header .nav-list li .active-link::after {
+  opacity: 1 !important;
+}
+.header .nav-list li a:hover::after {
+  opacity: 1;
+}
+.header .nav-list-area .btn {
+  padding: 0.5rem 0.8rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  font-size: 14px;
+}
+.header .toggle-menu {
+  cursor: pointer;
+  margin-top: -6px;
+  display: none;
+}
+.header .toggle-menu .menu-bar {
+  width: 2rem;
+  height: 2px;
+  background-color: var(--text-color);
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.5s;
+}
+.header .toggle-menu .menu-bar::before,
+.header .toggle-menu .menu-bar::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  background-color: inherit;
+  transition: all 0.5s;
+}
+.header .toggle-menu .menu-bar::before {
+  width: inherit;
+  top: -0.6rem;
+}
+.header .toggle-menu .menu-bar::after {
+  width: 1rem;
+  top: 0.6rem;
+}
+.open-menu .menu-bar {
+  background-color: transparent !important;
+}
+.open-menu .menu-bar::before {
+  top: 0 !important;
+  transform: rotate(135deg);
+  background-color: var(--text-color) !important;
+}
+.open-menu .menu-bar::after {
+  top: 0 !important;
+  transform: rotate(-135deg);
+  background-color: var(--text-color) !important;
+  width: inherit !important;
+}
+/* Media query */
+@media screen and (max-width: 870px) {
+  .header .nav-list {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--text-color);
+    transition: 0.5s;
+  }
+  .header .nav-list.open-menu {
+    left: 0;
+  }
+  .header .nav-list-area .btn {
+    margin: 0 1rem 0 0;
+  }
+  .header .toggle-menu {
+    display: block;
+  }
+  .header .nav-list li {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .header .nav-list li a {
+    color: var(--white-color) !important;
+  }
+}
+/* Nav ends */

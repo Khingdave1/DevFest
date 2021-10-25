@@ -1,0 +1,123 @@
+/* Import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+/* Variables starts */
+:root {
+  --primary-color: #fbbc04;
+  --text-color: #202124;
+  --white-color: #ffffff;
+  --grey: #e8eaed;
+  --text-color2: rgba(0, 0, 0, 0.54);
+  --box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
+    0 1px 3px 1px rgb(60 64 67 / 15%);
+  --border-radius: 5rem;
+  --border-radius2: 0.5rem;
+}
+/* Variables ends */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  color: var(--text-color);
+  background-color: var(--grey);
+}
+
+/* General starts */
+a {
+  color: var(--text-color);
+}
+button {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+input,
+button,
+textarea {
+  font-family: "Roboto Mono", monospace;
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: "Roboto Mono", monospace;
+}
+.btn {
+  display: inline-block;
+  border-radius: var(--border-radius);
+  transition: all 250ms ease-in;
+  padding: 0.5rem 0.8rem;
+  border-radius: var(--border-radius);
+}
+.prim-btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 2px solid transparent;
+}
+.prim-btn:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.sec-btn {
+  background-color: var(--grey);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.sec-btn:hover {
+  background-color: var(--white-color);
+}
+.container {
+  padding: 0 5%;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+.sect {
+  padding: 5rem 0;
+}
+@media only screen and (max-width: 870px) {
+  .sect {
+    padding: 3rem 0;
+  }
+}
+.sect-heading h2 {
+  margin-bottom: 1rem;
+}
+/*
+.sect-heading h2::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: -0.5rem;
+  background-color: var(--primary-color);
+} */
+
+.clickable {
+  cursor: pointer;
+}
+.uc {
+  text-transform: uppercase;
+}
+
+/* Headings starts */
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+/* Headings ends */
