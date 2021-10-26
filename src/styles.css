@@ -53,6 +53,7 @@ input::placeholder,
 textarea::placeholder {
   font-family: "Google Sans", "Roboto Mono", monospace;
 }
+/* Buttons Starts */
 .btn {
   display: inline-block;
   border-radius: var(--border-radius);
@@ -78,6 +79,9 @@ textarea::placeholder {
 .sec-btn:hover {
   background-color: var(--white-color);
 }
+/* Buttons ends */
+
+/* Section starts */
 .container {
   padding: 0 5%;
 }
@@ -98,15 +102,7 @@ textarea::placeholder {
 .sect-heading h2 {
   margin-bottom: 1rem;
 }
-/*
-.sect-heading h2::before {
-  content: "";
-  width: 3px;
-  height: 100%;
-  position: absolute;
-  left: -0.5rem;
-  background-color: var(--primary-color);
-} */
+/* Section ends */
 
 .clickable {
   cursor: pointer;
@@ -119,5 +115,13 @@ textarea::placeholder {
 h2 {
   font-size: 30px;
   font-weight: 500;
+}
+h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 300;
 }
 /* Headings ends */

@@ -1,0 +1,60 @@
+/* Schedule Content starts */
+.w-100 {
+  width: 100%;
+  overflow-x: scroll;
+}
+.schedule-content-card {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+.schedule-content-item {
+  width: 300px;
+  background-color: var(--white-color);
+  border-radius: var(--border-radius2);
+  padding: 1.5rem 0.8rem;
+}
+.schedule-content-item:not(:last-child) {
+  margin-right: 2rem;
+}
+.schedule-content-item .details {
+  margin-top: 0.8rem;
+}
+.schedule-content-item img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius2);
+}
+.schedule-content-item p {
+  margin-top: 0.8rem;
+}
+
+/* Atending in person (ait) starts */
+.ait-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 870px) {
+  .ait-content {
+    display: grid;
+    grid-gap: 2rem;
+  }
+}
+.ait-details {
+  flex-basis: 45%;
+}
+.ait-details p {
+  color: var(--text-color2);
+}
+.ait-details .btn {
+  margin-top: 1rem;
+  padding: 0.5rem 0.8rem;
+}
+.ait-img {
+  flex-basis: 50%;
+}
+.ait-img img {
+  width: 100%;
+}
+/* Atending in person (ait) ends */

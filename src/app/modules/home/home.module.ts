@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { EventsComponent } from './events/events.component';
 import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
+import { SchedulesComponent } from './schedules/schedules.component';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    EventsComponent
+    EventsComponent,
+    SchedulesComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { RouterModule } from '@angular/router';
   ],
   exports: [
     HomeComponent,
-    EventsComponent
+    EventsComponent,
+    SchedulesComponent
   ]
 })
 export class HomeModule { }
