@@ -1,1 +1,42 @@
-
+@media only screen and (min-width: 870px) {
+  .speakers-heading {
+    width: 50%;
+  }
+}
+.speakers-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.speakers-item {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius2);
+  padding: 0.8rem;
+}
+.speakers-item-img {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.speakers-item img {
+  height: 130px;
+  min-width: 130px;
+  width: 130px;
+  border-radius: 50%;
+  margin: auto;
+}
+.speakers-item p {
+  color: var(--text-color2);
+  margin: 0.3rem 0 1rem 0;
+}
+.social-icons i {
+  font-size: 30px;
+}
+.social-icons i.tw {
+  color: #1da1f2;
+  margin-right: 1rem;
+}
+.social-icons i.ln {
+  color: #0077b5;
+}

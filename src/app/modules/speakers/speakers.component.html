@@ -1,1 +1,27 @@
-<p>speakers works!</p>
+<section class="speakers sect">
+  <div class="container">
+    <div class="sect-heading speakers-heading">
+      <h2>Speaking at DevFest</h2>
+      <p>
+        Our speakers are influential folks & allies who have been associated
+        with communities within their organisations, cities, country and beyond.
+      </p>
+    </div>
+    <!-- Speakers Card -->
+    <div class="speakers-card">
+      <div class="speakers-item" *ngFor="let i of speakers">
+        <div class="speakers-item-img">
+          <img [src]="i.image" alt="" />
+        </div>
+        <div class="details">
+          <h5>{{ i.name }}</h5>
+          <p>{{ i.role }}</p>
+          <span class="social-icons">
+            <a href="#"><i class="bx bxl-twitter tw"></i></a>
+            <a href="#"><i class="bx bxl-linkedin-square ln"></i></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

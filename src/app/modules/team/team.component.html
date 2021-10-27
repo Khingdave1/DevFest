@@ -1,1 +1,29 @@
-<p>team works!</p>
+<section class="team sect">
+  <div class="container">
+    <div class="sect-heading team-heading">
+      <h2>Meet the Team</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, perspiciatis
+        soluta repellat corporis reprehenderit aliquam voluptatem corrupti
+        consequuntur neque eligendi incidunt magni delectus suscipit repellendus
+        minus amet.
+      </p>
+    </div>
+    <!-- Team Card -->
+    <div class="team-card">
+      <div class="team-item" *ngFor="let i of teamMembers">
+        <div class="team-item-img">
+          <img [src]="i.image" alt="" />
+        </div>
+        <div class="details">
+          <h5>{{ i.name }}</h5>
+          <p>{{ i.role }}</p>
+          <span class="social-icons">
+            <a href="#"><i class="bx bxl-twitter tw"></i></a>
+            <a href="#"><i class="bx bxl-linkedin-square ln"></i></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
