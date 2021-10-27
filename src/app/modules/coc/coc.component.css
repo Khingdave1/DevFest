@@ -1,0 +1,12 @@
+.coc_big_p {
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.coc_container {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
