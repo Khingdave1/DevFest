@@ -65,10 +65,6 @@
   height: auto;
   border-radius: var(--border-radius2);
 }
-/* .event-content-item h5 {
-  font-size: 18px;
-  font-weight: 500;
-} */
 .event-content-item p {
   color: var(--text-color2);
   margin: 0.3rem 0;
