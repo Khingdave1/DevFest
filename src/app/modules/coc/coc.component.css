@@ -6,7 +6,10 @@
 .coc_container {
     padding-top: 30px;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 40px;
-    grid-row-gap: 40px;
+    grid-row-gap: 40px; */
 }
