@@ -4,6 +4,8 @@ import { EventsComponent } from './events/events.component';
 import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
 import { SchedulesComponent } from './schedules/schedules.component';
+import { AitComponent } from './ait/ait.component';
+import { VenueComponent } from './venue/venue.component';
 
 
 
@@ -11,7 +13,9 @@ import { SchedulesComponent } from './schedules/schedules.component';
   declarations: [
     HomeComponent,
     EventsComponent,
-    SchedulesComponent
+    SchedulesComponent,
+    AitComponent,
+    VenueComponent
   ],
   imports: [
     CommonModule,

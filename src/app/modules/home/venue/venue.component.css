@@ -1,0 +1,28 @@
+/* Atending in person (venue) starts */
+.venue-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 870px) {
+  .venue-content {
+    display: grid;
+    grid-gap: 2rem;
+  }
+}
+.venue-details {
+  flex-basis: 45%;
+}
+.venue-details p {
+  color: var(--text-color2);
+}
+.venue-map {
+  flex-basis: 50%;
+}
+.venue-map iframe {
+  width: 100%;
+  height: 450px;
+  border: 2px solid var(--white-color);
+}
+/* Atending in person (venue) ends */
