@@ -6,8 +6,18 @@
   height: 5vh;
   background-color: #fdf195;
   padding: 0.5rem;
+  display: flex;
+  align-items: center;
   z-index: 100;
+  /* overflow-x: scroll; */
 }
+.covid-guide div {
+  width: fit-content;
+}
+.covid-guide div strong {
+  color: red;
+}
+
 /* Covid Guide ends */
 
 /* Header starts */
@@ -116,6 +126,12 @@
 }
 /* Media query */
 @media screen and (max-width: 870px) {
+  .covid-guide {
+    display: none;
+  }
+  .header {
+    margin-top: 0;
+  }
   .header .nav-list {
     position: fixed;
     top: 0px;
