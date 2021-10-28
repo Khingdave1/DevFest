@@ -20,7 +20,7 @@
 
 footer {
   background: rgb(205, 223, 253);
-  padding: 3rem 0;
+  padding: 3rem 0 2rem 0;
   position: relative;
 }
 .footer-top {
@@ -52,6 +52,9 @@ footer {
 .footer-link {
   margin-top: 1.5rem;
 }
+.footer-link li {
+  margin-bottom: 0.5rem;
+}
 .footer-link li:not(:last-child) {
   margin-right: 1.5rem;
 }
@@ -71,9 +74,10 @@ footer {
   transform: translateY(-20px);
 }
 @media only screen and (max-width: 870px) {
-  /* .go-top img {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-  } */
+  .footer-top ul li {
+    padding: 3px;
+  }
+  .footer-top ul li i {
+    font-size: 18px;
+  }
 }

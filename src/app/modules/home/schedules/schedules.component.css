@@ -18,6 +18,10 @@
   background-color: rgb(205, 223, 253);
   border-radius: var(--border-radius2);
   padding: 1.5rem 0.8rem;
+  margin-bottom: 0.3rem;
+}
+.schedule-content-item:nth-child(even) {
+  background-color: rgba(255, 232, 205, 0.5);
 }
 .schedule-content-item:not(:last-child) {
   margin-right: 2rem;
@@ -32,4 +36,25 @@
 }
 .schedule-content-item p {
   margin-top: 0.8rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: var(--border-radius);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

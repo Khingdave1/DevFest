@@ -11,7 +11,7 @@
   margin-top: 3rem;
 }
 .speakers-item {
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
   border-radius: var(--border-radius2);
   padding: 0.8rem;
 }
@@ -24,6 +24,7 @@
   min-width: 130px;
   width: 130px;
   border-radius: 50%;
+  border: 2px solid var(--white-color);
   margin: auto;
 }
 .speakers-item p {
