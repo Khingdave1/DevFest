@@ -2,7 +2,6 @@
 .schedule {
   background-color: var(--white-color);
   border-radius: var(--border-radius2);
-  padding: 1.5rem 0.8rem;
 }
 .w-100 {
   width: 100%;
