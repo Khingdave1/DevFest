@@ -26,9 +26,6 @@
   border-radius: var(--border-radius);
   text-align: center;
 }
-.event-schedule-date i {
-  vertical-align: middle;
-}
 .event-schedule-btns {
   margin-top: 1.5rem;
   display: flex;

@@ -110,7 +110,9 @@ textarea::placeholder {
 .uc {
   text-transform: uppercase;
 }
-
+i {
+  vertical-align: middle;
+}
 /* Headings starts */
 h2 {
   font-size: 30px;
