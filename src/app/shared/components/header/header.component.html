@@ -17,8 +17,9 @@
     </span>
     <!-- Nav link -->
     <nav class="nav-list-area">
-      <ul class="nav-list">
+      <ul class="nav-list" [class.open-menu]="hamClick">
         <li>
+          <i class="bx bx-home"></i>
           <a
             routerLink=""
             routerLinkActive="active-link"
@@ -27,18 +28,27 @@
           >
         </li>
         <li>
+          <i class="bx bx-user-check"></i>
           <a routerLink="/registration" routerLinkActive="active-link"
             >Registration</a
           >
         </li>
-        <li><a routerLink="/team" routerLinkActive="active-link">Team</a></li>
         <li>
+          <i class="bx bx-group"></i>
+          <a routerLink="/team" routerLinkActive="active-link">Team</a>
+        </li>
+        <li>
+          <i class="bx bx-notepad"></i>
           <a routerLink="/schedule" routerLinkActive="active-link">Schedule</a>
         </li>
         <li>
+          <i class="bx bx-user-voice"></i>
           <a routerLink="/speakers" routerLinkActive="active-link">Speakers</a>
         </li>
-        <li><a routerLink="/faq" routerLinkActive="active-link">Faq</a></li>
+        <li>
+          <i class="bx bx-star"></i>
+          <a routerLink="/faq" routerLinkActive="active-link">Faq</a>
+        </li>
       </ul>
 
       <!-- Register btn -->
@@ -47,7 +57,12 @@
       </a>
 
       <!-- Hamburger menu -->
-      <div class="toggle-menu" id="toggle-menu">
+      <div
+        class="toggle-menu"
+        id="toggle-menu"
+        (click)="openMenu()"
+        [class.open-menu]="hamClick"
+      >
         <span class="menu-bar"></span>
       </div>
     </nav>
