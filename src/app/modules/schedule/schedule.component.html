@@ -1,1 +1,24 @@
-<p>schedule works!</p>
+<section class="schedule sect">
+  <div class="container">
+    <div class="sect-heading schedule-heading">
+      <h2>Schedule</h2>
+      <p>
+        Follow code demonstrations by our expert speakers on 5 different tracks.
+        Check out the schedule below and don't forget to mark your calendar so
+        that you don't miss out on any sessions.
+      </p>
+    </div>
+    <!-- schedule Card -->
+    <div class="schedule-card">
+      <div class="schedule-item" *ngFor="let i of schedule">
+        <div class="schedule-item-date">
+          <h5>{{ i.startTime }} - {{ i.stopTime }}</h5>
+          <p>GMT +1</p>
+        </div>
+        <div class="details">
+          <h5>{{ i.agenda }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

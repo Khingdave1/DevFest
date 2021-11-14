@@ -22,7 +22,7 @@ const routes: Routes = [
       { path: 'faq', component: FaqComponent },
       { path: 'coc', component: CocComponent }
     ]
-  },
+  }
 ];
 
 @NgModule({

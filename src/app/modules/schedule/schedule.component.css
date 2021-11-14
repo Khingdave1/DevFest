@@ -1,0 +1,29 @@
+@media only screen and (min-width: 870px) {
+  .schedule-heading {
+    width: 50%;
+  }
+}
+.schedule-card {
+  display: grid;
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  background-color: var(--white-color);
+  padding: 1rem;
+}
+.schedule-item {
+  background-color: rgb(205, 223, 253);
+  border-radius: var(--border-radius2);
+  display: flex;
+  align-items: center;
+}
+.schedule-item-date {
+  padding: 0.8rem;
+  border-right: 1px solid var(--white-color);
+  flex-basis: 20%;
+}
+.schedule-item-date p {
+  color: var(--text-color2);
+}
+.schedule-item .details {
+  padding: 0.8rem;
+}

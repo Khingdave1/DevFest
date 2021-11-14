@@ -1,1 +1,20 @@
-<p>faq works!</p>
+<section class="faq sect">
+  <div class="container">
+    <div class="sect-heading faq-heading">
+      <h2>Frequently asked questions</h2>
+      <p>Need Answers? Everything you need to know, Find them here.</p>
+    </div>
+    <!-- faq Card -->
+    <div class="faq-card">
+      <div class="faq-item" *ngFor="let i of faqs">
+        <div class="faq-item-top" (click)="showMore($event)">
+          <h5>{{ i.question }}</h5>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+        <p class="details" [class.show]="faqQuest">
+          {{ i.answer }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

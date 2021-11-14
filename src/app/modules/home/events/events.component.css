@@ -69,7 +69,6 @@
 .watch-btn {
   display: inline-block;
   border: 1px solid #ff0000;
-  color: #ff0000;
   border-radius: 0.3rem;
   padding: 0.3rem 0.5rem;
   margin-top: 0.8rem;
@@ -77,5 +76,8 @@
 }
 .watch-btn:hover {
   background-color: #ff000015;
+}
+.watch-btn a {
+  color: #ff0000;
 }
 /* event-contents ends */
