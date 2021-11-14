@@ -16,7 +16,7 @@
   background-color: rgb(205, 223, 253);
   border-radius: var(--border-radius2);
   padding: 1.5rem 0.8rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
 }
 .schedule-content-item:nth-child(even) {
   background-color: rgba(255, 232, 205, 0.5);
