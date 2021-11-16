@@ -16,6 +16,9 @@
   display: flex;
   align-items: center;
 }
+.schedule-item:nth-child(even) {
+  background-color: rgba(255, 232, 205, 0.5);
+}
 .schedule-item-date {
   padding: 0.8rem;
   border-right: 1px solid var(--white-color);

@@ -1,4 +1,7 @@
 /* Event Content Top starts */
+.event.sect {
+  padding-top: 3rem;
+}
 .event-content-top {
   display: flex;
   justify-content: space-between;

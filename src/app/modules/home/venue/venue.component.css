@@ -8,7 +8,7 @@
 .venue-details {
   flex-basis: 45%;
 }
-.venue-details p {
+.venue-details span {
   color: var(--text-color2);
 }
 .venue-map {
