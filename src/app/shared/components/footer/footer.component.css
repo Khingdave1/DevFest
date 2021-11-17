@@ -33,7 +33,10 @@ footer {
   background-color: var(--white-color);
   transition: all 0.2s ease;
 }
-.footer-top ul li:hover {
+.footer-top ul li i {
+  font-size: 24px;
+}
+.footer-top ul li i:hover {
   color: var(--white-color);
 }
 .footer-top ul li.fb:hover {
@@ -44,9 +47,6 @@ footer {
 }
 .footer-top ul li.tw:hover {
   background-color: #1da1f2;
-}
-.footer-top ul li i {
-  font-size: 24px;
 }
 .footer-link {
   margin-top: 1.5rem;
