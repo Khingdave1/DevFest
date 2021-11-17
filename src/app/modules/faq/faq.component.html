@@ -6,15 +6,31 @@
     </div>
     <!-- faq Card -->
     <div class="faq-card">
-      <div class="faq-item" *ngFor="let i of faqs">
-        <div class="faq-item-top" (click)="showMore($event)">
-          <h5>{{ i.question }}</h5>
+      <div class="faq-item" *ngFor="let item of data; let i = index">
+        <div
+          class="faq-item-top accordion"
+          (click)="toggleAccordian($event, i)"
+        >
+          <h5>{{ item.parentName }}</h5>
           <i class="bx bx-chevron-down"></i>
         </div>
-        <p class="details" [class.show]="faqQuest">
-          {{ i.answer }}
+        <p class="details panel" *ngFor="let child of item.childProperties">
+          {{ child.propertyName }}
         </p>
       </div>
+
+      <!-- <div *ngFor="let item of data; let i = index">
+        <button class="accordion" (click)="toggleAccordian($event, i)">
+          {{ item.parentName }}
+        </button>
+        <div
+          class="panel"
+          *ngFor="let child of item.childProperties"
+          hide="!item.isActive"
+        >
+          <p>{{ child.propertyName }}</p>
+        </div>
+      </div> -->
     </div>
   </div>
 </section>
