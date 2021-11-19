@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FaqComponent implements OnInit {
 
-  faqQuest: any;
-
   data: any =
     [
       {
@@ -44,24 +42,7 @@ export class FaqComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // this.yes = document.getElementsByClassName("faq-item-top");
-
-    // Array.prototype.forEach.call(this.yes, i => {
-
-    // });
-
-
   }
-
-  // showMore(event: any) {
-  //   // this.yes = event.currentTarget.children[1]
-  //   // this.yes.classList.toggle('show')
-
-  //   this.faqQuest = event.currentTarget.parentElement.children[1]
-  //   this.faqQuest.classList.toggle('show')
-
-  //   console.log(this.faqQuest)
-  // }
 
   toggleAccordian(event: any, index: any) {
     // var element = event.target;
