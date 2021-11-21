@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,16 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpeakersComponent implements OnInit {
 
-  speakers = [
-    { id: 1, image: '../../../assets/img/home.7c51634b.jpg', name: "Name", role: "Role", twitter: "Twitter", linkedin: "LinkedIn" },
-    { id: 2, image: '../../../assets/img/home.7c51634b.jpg', name: "Name", role: "Role", twitter: "Twitter", linkedin: "LinkedIn" },
-    { id: 3, image: '../../../assets/img/home.7c51634b.jpg', name: "Name", role: "Role", twitter: "Twitter", linkedin: "LinkedIn" },
-    { id: 4, image: '../../../assets/img/home.7c51634b.jpg', name: "Name", role: "Role", twitter: "Twitter", linkedin: "LinkedIn" },
-  ]
+  speakers: any;
+  loading: true;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.http.get('https://sessionize.com/api/v2/tgc3rlcs/view/Speakers').subscribe((res: any) => {
+      this.speakers = []
+      res.forEach((r: any) => {
+        let item = r
+        this.speakers.push(item)
+        console.log(item)
+      });
+    })
   }
 
 }

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -14,7 +15,7 @@ export class ScheduleComponent implements OnInit {
     { id: 4, startTime: "10:40am", stopTime: "11:15am", agenda: "Networking your way to success" },
   ]
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
   }
