@@ -19,7 +19,7 @@ export class SpeakersComponent implements OnInit {
       res.forEach((r: any) => {
         let item = r
         this.speakers.push(item)
-        console.log(item)
+        console.log(item.links)
       });
     })
   }

@@ -17,9 +17,9 @@
           <div class="details">
             <h5>{{ i.fullName }}</h5>
             <p>{{ i.tagLine }}</p>
-            <span class="social-icons">
-              <a [href]="i.links.url"><i class="bx bxl-twitter tw"></i></a>
-              <a href="#"><i class="bx bxl-linkedin-square ln"></i></a>
+            <span class="social-icons" *ngFor="let child of i.links">
+              <a [href]="child.url"><i class="bx bxl-twitter tw"></i></a>
+              <!-- <a href="#"><i class="bx bxl-linkedin-square ln"></i></a> -->
             </span>
           </div>
         </div>
