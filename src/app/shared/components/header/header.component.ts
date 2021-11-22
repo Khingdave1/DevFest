@@ -18,4 +18,10 @@ export class HeaderComponent implements OnInit {
     this.hamClick = !this.hamClick
   }
 
+  closeMenu() {
+    this.hamClick = false
+
+  }
+
+
 }

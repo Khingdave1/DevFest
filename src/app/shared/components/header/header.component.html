@@ -17,30 +17,39 @@
     <!-- Nav link -->
     <nav class="nav-list-area">
       <ul class="nav-list" [class.open-menu]="hamClick">
-        <li>
+        <li (click)="closeMenu()">
           <i class="bx bx-home"></i>
           <a
+            class="yes"
             routerLink=""
             routerLinkActive="active-link"
             [routerLinkActiveOptions]="{ exact: true }"
             >Home</a
           >
         </li>
-        <li>
+        <li (click)="closeMenu()">
           <i class="bx bx-group"></i>
-          <a routerLink="/team" routerLinkActive="active-link">Team</a>
+          <a class="yes" routerLink="/team" routerLinkActive="active-link"
+            >Team</a
+          >
         </li>
-        <li>
+        <li (click)="closeMenu()">
           <i class="bx bx-notepad"></i>
-          <a routerLink="/schedule" routerLinkActive="active-link">Schedule</a>
+          <a class="yes" routerLink="/schedule" routerLinkActive="active-link"
+            >Schedule</a
+          >
         </li>
-        <li>
+        <li (click)="closeMenu()">
           <i class="bx bx-user-voice"></i>
-          <a routerLink="/speakers" routerLinkActive="active-link">Speakers</a>
+          <a class="yes" routerLink="/speakers" routerLinkActive="active-link"
+            >Speakers</a
+          >
         </li>
-        <li>
+        <li (click)="closeMenu()">
           <i class="bx bx-star"></i>
-          <a routerLink="/faq" routerLinkActive="active-link">Faq</a>
+          <a class="yes" routerLink="/faq" routerLinkActive="active-link"
+            >Faq</a
+          >
         </li>
       </ul>
 

@@ -7,18 +7,53 @@
         Check out the schedule below and don't forget to mark your calendar so
         that you don't miss out on any sessions.
       </p>
+      <a href="http://bit.ly/devfest-21" class="btn prim-btn">Reserve a spot</a>
+    </div>
+    <!-- Join Button -->
+    <div class="join-live">
+      <span><a href="" class="btn sec-btn">Join track 1</a></span>
+      <span><a href="" class="btn sec-btn">Join track 2</a></span>
     </div>
     <!-- schedule Card -->
     <div class="schedule-card">
-      <div class="schedule-item" *ngFor="let i of schedule">
-        <div class="schedule-item-date">
-          <h5>{{ i.startTime }} - {{ i.stopTime }}</h5>
-          <p>GMT +1</p>
+      <ng-container *ngIf="schedules?.length > 0; else noItems">
+        <div class="schedule-item" *ngFor="let i of schedules">
+          <div class="schedule-item-date">
+            <h5 class="time">{{ i.slotStart }}</h5>
+            <small class="zone">GMT +1</small>
+          </div>
+          <div
+            class="details"
+            *ngFor="let child of i.rooms"
+            [class.speaking]="child.session.speakers != ''"
+          >
+            <h5 class="name">{{ child.name }}</h5>
+            <p class="title">{{ child.session.title }}</p>
+            <div
+              class="speakers"
+              *ngFor="let childChild of child.session.speakers"
+            >
+              <i class="bx bx-user-voice"></i>
+              <p>{{ childChild.name }}</p>
+            </div>
+          </div>
         </div>
-        <div class="details">
-          <h5>{{ i.agenda }}</h5>
-        </div>
-      </div>
+      </ng-container>
+      <!-- If the Schedules List is empty -->
+      <ng-template #noItems>
+        <h3 class="empty-list">Loading!!!</h3>
+      </ng-template>
     </div>
   </div>
 </section>
+
+<!-- <div class="check">
+  <div class="check-item" *ngFor="let i of schedules"
+  >
+    <p>{{ i.slotStart }}</p>
+    <div *ngFor="let child of i.rooms">
+      <p>{{ child.name }}</p>
+      <p>{{ child.session.description }}</p>
+    </div>
+  </div>
+</div> -->

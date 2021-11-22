@@ -14,12 +14,13 @@ export class SpeakersComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    // Get the Speakers data from sessionize
     this.http.get('https://sessionize.com/api/v2/tgc3rlcs/view/Speakers').subscribe((res: any) => {
       this.speakers = []
       res.forEach((r: any) => {
         let item = r
         this.speakers.push(item)
-        console.log(item.links)
+        console.log(this.speakers)
       });
     })
   }
