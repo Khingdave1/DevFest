@@ -26,6 +26,11 @@
   background-color: var(--white-color);
   padding: 1rem;
 }
+@media only screen and (max-width: 450px) {
+  .schedule-card {
+    overflow: scroll;
+  }
+}
 .schedule-item {
   background-color: rgb(205, 223, 253);
   border-radius: var(--border-radius2);
