@@ -168,6 +168,9 @@ i {
 }
 /* Media query */
 @media screen and (max-width: 870px) {
+  .covid-guide p {
+    font-size: 14px;
+  }
   .header .nav-list {
     position: fixed;
     top: 0px;
